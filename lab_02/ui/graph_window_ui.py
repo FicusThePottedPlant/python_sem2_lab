@@ -160,6 +160,10 @@ class Ui_GraphWindow(object):
         self.build_graph.setStyleSheet("border: 1px solid black;\n"
 "background-color: rgba(169, 135, 255, 200);")
         self.build_graph.setObjectName("build_graph")
+        self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
+        self.progressBar.setGeometry(QtCore.QRect(90, 460, 201, 23))
+        self.progressBar.setProperty("value", 0)
+        self.progressBar.setObjectName("progressBar")
         GraphWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(GraphWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1087, 21))
